@@ -1,12 +1,13 @@
 import 'dart:math';
 
+import 'package:architecture_bluepoints/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_http_cache/dio_http_cache.dart';
 
 import './news_data_source_base.dart';
 import '../model/news.dart';
-import "../../utils/date_time.dart"
+import "../../utils/date_time.dart";
 
 class NewsDataSource extends NewsDataSourceBase {
   final Dio _dio;
@@ -16,12 +17,23 @@ class NewsDataSource extends NewsDataSourceBase {
 
   @override
   Future<News> getNews() {
-    return _dio.get<Map<String, dynamic>>("/v2/everything",
-        queryParameters: <String, String>{
-          "q": ["anim", "manga"][Random().nextInt(2)],
-          "from": DateTime.now().subtract(
-            const Duration(days: 28),
-          ).toLocal().formatYYYYMMdd(),
-        });
+    return _dio
+        .get<Map<String, dynamic>>(
+          "/v2/everything",
+          queryParameters: <String, String>{
+            "q": ["anim", "manga"][Random().nextInt(2)],
+            "from": DateTime.now()
+                .subtract(
+                  const Duration(days: 28),
+                )
+                .toLocal()
+                .formatYYYYMMdd(),
+            "sortBy": "publishedAt",
+            "language": "en",
+            "apikey": Constants.of().apiKey,
+          },
+          options: buildCacheOptions(const Duration(seconds: 5)),
+        )
+        .then((response) => News.fromJson(response.data));
   }
 }
