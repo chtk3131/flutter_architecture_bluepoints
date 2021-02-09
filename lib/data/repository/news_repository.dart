@@ -1,4 +1,5 @@
 import 'package:architecture_bluepoints/data/remote/news_data_source.dart';
+import 'package:architecture_bluepoints/data/remote/news_data_source_base.dart';
 import 'package:flutter/material.dart';
 
 import './news_repository_base.dart';
@@ -8,7 +9,7 @@ import '../model/result.dart';
 class NewsRepository extends NewsRepositoryBase {
   final NewsDataSource _dataSource;
 
-  NewsRepository({@required NewsDataSource dataSource})
+  NewsRepository({@required NewsDataSourceBase dataSource})
       : _dataSource = dataSource;
 
   @override

@@ -1,10 +1,11 @@
+import 'package:architecture_bluepoints/data/local/theme_data_source_base.dart';
 import 'package:flutter/material.dart';
 import './theme_repository_base.dart';
 import '../local/theme_data_source.dart';
 
 class ThemeRepository extends ThemeRepositoryBase {
   final ThemeDataSource _dataSource;
-  ThemeRepository({@required ThemeDataSource dataSource})
+  ThemeRepository({@required ThemeDataSourceBase dataSource})
       : _dataSource = dataSource;
 
   @override
