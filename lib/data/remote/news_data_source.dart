@@ -7,7 +7,7 @@ import 'package:dio_http_cache/dio_http_cache.dart';
 
 import './news_data_source_base.dart';
 import '../model/news.dart';
-import "../../utils/date_time.dart";
+import '../../utils/ext/date_time.dart';
 
 class NewsDataSource extends NewsDataSourceBase {
   final Dio _dio;

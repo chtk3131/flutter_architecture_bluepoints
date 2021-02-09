@@ -46,7 +46,7 @@ ThemeData get lightTheme {
   return ThemeData.light().copyWith(
     visualDensity: VisualDensity.adaptivePlatformDensity,
     textTheme: GoogleFonts.notoSansTextTheme(
-      ThemeData.dark().textTheme,
+      ThemeData.light().textTheme,
     ).copyWith(
       headline1: headline1,
       button: buttonTextStyle,
