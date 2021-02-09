@@ -2,9 +2,9 @@ import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 
 import './app_shared_preferences.dart';
-import './theme_data_source_imp.dart';
+import 'theme_data_source_base.dart';
 
-class ThemeDataSource extends ThemeDataSourceImpl {
+class ThemeDataSource extends ThemeDataSourceBase {
   final AppSharedPreferences _prefs;
   static const String keyThemeMode = "theme_mode";
 
