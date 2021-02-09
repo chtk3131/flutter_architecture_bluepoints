@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:test/test.dart' as TEST;
-import "package:architecture_bluepoints/counter.dart";
+import 'package:architecture_bluepoints/model/counter.dart';
 
 void main() {
   TEST.group("Counter", () {
@@ -21,12 +21,6 @@ void main() {
       final counter = Counter();
 
       counter.decrement();
-
-      expect(counter.value, -1);
-    });
-
-    TEST.test("適当に失敗パターン", () {
-      final counter = Counter();
 
       expect(counter.value, -1);
     });

@@ -43,15 +43,16 @@ dependencies:
   google_fonts: null
   google_sign_in: null
   hooks_riverpod: null
+  http: 
   integration_test: ^1.0.2+2
   json_serializable: null
   shared_preferences: null
   ua_client_hints: null
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   flutter_driver:
+    sdk: flutter
+  flutter_test:
     sdk: flutter
 
   build_runner: ^1.10.12
