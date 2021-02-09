@@ -1,3 +1,4 @@
+import 'package:architecture_bluepoints/constants.dart';
 import 'package:architecture_bluepoints/data/model/article.dart';
 import 'package:architecture_bluepoints/ui/components/network_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -52,6 +53,9 @@ class ArticleItem extends StatelessWidget {
             ),
           ],
         ),
+        onTap: () {
+          Get.toNamed(Constants.pageDetail, arguments: _article);
+        },
       ),
     );
   }

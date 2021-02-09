@@ -16,7 +16,6 @@ class HomePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final appTheme = useProvider(appThemeNotifierProvider);
-    final theme = useProvider(appThemeNotifierProvider.state);
 
     return Scaffold(
       appBar: AppBar(

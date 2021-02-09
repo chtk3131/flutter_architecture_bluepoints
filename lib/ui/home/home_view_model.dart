@@ -1,5 +1,4 @@
 import 'package:architecture_bluepoints/data/provider/news_repository_provider.dart';
-import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/all.dart';
 
 import '../../data/model/news.dart';
