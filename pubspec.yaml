@@ -28,13 +28,8 @@ dependencies:
   cached_network_image: null
   cupertino_icons: null
   dio: null
-  dio_firebase_performance: null
   dio_http_cache: null
   enum_to_string: null
-  firebase_auth: null
-  firebase_core: null
-  firebase_crashlytics: null
-  firebase_performance: null
   flutter_hooks: null
   flutter_svg: null
   freezed_annotation: null
