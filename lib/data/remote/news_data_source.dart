@@ -1,10 +1,10 @@
 import 'dart:math';
 
-import 'package:architecture_bluepoints/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_http_cache/dio_http_cache.dart';
 
+import '../../constants.dart';
 import './news_data_source_base.dart';
 import '../model/news.dart';
 import '../../utils/ext/date_time.dart';
@@ -29,7 +29,7 @@ class NewsDataSource extends NewsDataSourceBase {
                 .toLocal()
                 .formatYYYYMMdd(),
             "sortBy": "publishedAt",
-            "language": "en",
+            "language": "jp",
             "apikey": Constants.of().apiKey,
           },
           options: buildCacheOptions(const Duration(seconds: 5)),
