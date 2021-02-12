@@ -33,7 +33,6 @@ dependencies:
   flutter_hooks: null
   flutter_svg: null
   freezed_annotation: null
-  gap: null
   get: null
   google_fonts: null
   google_sign_in: null
