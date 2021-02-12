@@ -1,11 +1,11 @@
-import 'package:architecture_bluepoints/ui/components/article_item.dart';
-import 'package:architecture_bluepoints/ui/components/container_with_loading.dart';
-import 'package:architecture_bluepoints/ui/loading_state_view_model.dart';
-import 'package:architecture_bluepoints/utils/error_snackbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/all.dart';
 
+import '../../utils/error_snackbar.dart';
+import '../../ui/components/article_item.dart';
+import '../../ui/components/container_with_loading.dart';
+import '../../ui/loading_state_view_model.dart';
 import './home_view_model.dart';
 import '../app_theme.dart';
 import '../../utils/ext/async_snapshot.dart';

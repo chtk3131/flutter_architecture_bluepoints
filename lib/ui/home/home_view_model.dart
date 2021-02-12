@@ -1,6 +1,6 @@
-import 'package:architecture_bluepoints/data/provider/news_repository_provider.dart';
 import 'package:hooks_riverpod/all.dart';
 
+import '../../data/provider/news_repository_provider.dart';
 import '../../data/model/news.dart';
 import '../../data/model/result.dart';
 import '../../data/repository/news_repository_base.dart';
