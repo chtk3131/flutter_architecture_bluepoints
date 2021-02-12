@@ -37,7 +37,6 @@ dependencies:
   google_fonts: null
   google_sign_in: null
   hooks_riverpod: null
-  http: 
   integration_test: ^1.0.2+2
   json_serializable: null
   shared_preferences: null
