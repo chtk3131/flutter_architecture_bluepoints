@@ -8,6 +8,7 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ページ遷移時の引数にArticleをセットする感じ？
+    // そもそも取得できなかったらどうなるの？エラーになるのでは？
     final Article article = Get.arguments;
 
     return Scaffold(

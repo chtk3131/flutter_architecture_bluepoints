@@ -20,8 +20,8 @@ class App extends HookWidget {
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: theme ?? ThemeMode.light,
-      home: HomePage(),
       routes: {
+        "/": (context) => HomePage(),
         Constants.pageHome: (context) => HomePage(),
         Constants.pageDetail: (context) => DetailPage(),
       },
